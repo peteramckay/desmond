@@ -9,6 +9,7 @@ Contents
 - Basics & Layout
 - Custom Typography
 - Carousel Styles
+- Footer Styles
 - Additional Media Queries
 
 */
@@ -24,7 +25,7 @@ Basics & Layout
 
 ------------------------------------------------------------------------------------  */
 
-
+/*
 @import "https://designmodo.github.io/Flat-UI/dist/css/flat-ui.min.css";
 @import "https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css";
 @import "https://daneden.github.io/animate.css/animate.min.css";
@@ -43,7 +44,7 @@ Basics & Layout
     max-width: 200px;
     display: inline-block;
     position: relative;
-    left: 75px;
+    left: 60px;
     padding: 0.5rem;
   }
   
@@ -80,6 +81,10 @@ Basics & Layout
 /*-------------------------------*/
 /*           VARIABLES           */
 /*-------------------------------*/
+
+
+/*
+
 body {
   position: relative;
   overflow-x: hidden;
@@ -100,6 +105,9 @@ html {
 /*-------------------------------*/
 /*           Wrappers            */
 /*-------------------------------*/
+
+/*
+
 #wrapper {
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
@@ -141,6 +149,10 @@ html {
 /*-------------------------------*/
 /*     Sidebar nav styles        */
 /*-------------------------------*/
+
+
+/*
+
 .sidebar-nav {
   list-style: none;
   margin: 0;
@@ -240,6 +252,11 @@ html {
 /*-------------------------------*/
 /*       Hamburger-Cross         */
 /*-------------------------------*/
+
+
+/*
+
+
 .hamburger {
   background: transparent;
   border: none;
@@ -351,6 +368,11 @@ html {
 /*-------------------------------*/
 /*          Dark Overlay         */
 /*-------------------------------*/
+
+
+/*
+
+
 .overlay {
   position: fixed;
   display: none;
@@ -380,7 +402,7 @@ Custom Typography
 
 ------------------------------------------------------------------------------------  */
 
-
+/*
 
 @font-face {
   font-family: 'Hattori Hanzo';
@@ -390,7 +412,7 @@ Custom Typography
        url('hattori_hanzo/webfont.svg#webfont') format('svg');
 }
 
-
+/*
 a, a:visited {
   text-decoration: none;
   color: #FF9100;
@@ -436,7 +458,7 @@ Carousel Styles
 ------------------------------------------------------------------------------------  */
 
 
-
+/*
 
 .carousel{
     margin-top: 35px;
@@ -446,16 +468,26 @@ Carousel Styles
 }
 .carousel .item{
     min-height: 400px; /* Prevent carousel from being distorted if for some reason image doesn't load */
+    
+    /*
+    
+    
 }
 .carousel .item img{
     margin: 0 auto; /* Align slide image horizontally center */
+
+/*
 }
 .ccontainer {
 	margin: 20px;
 }
 
+/*
 .carousel-indicators {position: fixed; bottom: 0;}
 
+*/
+
+/*
 .carousel-indicators li {border: 2px solid #a3a3a3;}
 
 .carousel-indicators li.active {background: #a3a3a3;}
@@ -484,6 +516,23 @@ a.carousel-control.right, a.carousel-control.left {
   min-width: 300px; 
   margin: 0 auto;
   }
+
+
+/*----------------------------------------------------------------------------------
+
+Footer Styles
+
+------------------------------------------------------------------------------------  */
+
+/*
+.footer {
+  position: fixed;
+  bottom: 0;
+  display: inline-block;
+  width: 100%;
+  padding: 1rem;
+  border: 2px dotted blue;
+  }
   
   
 /*----------------------------------------------------------------------------------
@@ -493,7 +542,7 @@ Additional Media Queries
 ------------------------------------------------------------------------------------  */
  
  
- 
+/* 
 @media screen and (max-width: 600px) {
 
 
@@ -517,3 +566,6 @@ Additional Media Queries
 
 }
 
+
+
+*/
