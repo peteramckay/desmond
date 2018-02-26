@@ -1,8 +1,12 @@
 # Desmond (Beta)
 
-Desmond is a responsive, Bootstrap-based theme for static web pages. We use it in production at https://indizr.com
+Desmond is the responsive, Bootstrap-based design theme for <a href="https://indizr.com">indizr.com</a>.
 
-Desmond is, and always will be, free to use under MIT license. It is under active development, so we welcome feedback, pull requests, bug reports, etc. via https://github.com/indizr/desmond/
+Please note: Our site is currently under re-design, so Desmond is as well. It's very much a work in progress, so probably not production-ready for your project. 
+
+Our current workflow is essentially to iterate our website, then contribute changes back to Desmond as we go. The hope is that over time, it should thus get fleshed out as a framework unto itself.
+
+Desmond is, and always will be, free to use under MIT license. We welcome feedback, pull requests, bug reports, and other collaboration via GitHub.
 
 Peter A. McKay    
 Founder   
