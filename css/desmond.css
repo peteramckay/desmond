@@ -10,25 +10,11 @@ Free to use under MIT license.
 
 Contents
 
-- Basics & Layout
 - Custom Typography
 
 
 
-/*----------------------------------------------------------------------------------
-
-Basics & Layout
-
-------------------------------------------------------------------------------------  */
-
-
-@import "https://designmodo.github.io/Flat-UI/dist/css/flat-ui.min.css";
-@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css";
-@import "https://daneden.github.io/animate.css/animate.min.css";
-
-
-
-/*----------------------------------------------------------------------------------
+*----------------------------------------------------------------------------------
 
 Custom Typography
 
@@ -65,20 +51,10 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {font-weight: inherit}
 
-hr {
-  display: block;
-  border: 0;
-  height: 1px;
-  background: #BFBFBF;
-  clear: both;
+.navbar-brand img {
+  height: auto;
+  max-height: 2.5rem;
+  width: auto;
 }
-
-ul {list-style: square inside}
-
-ol {list-style: decimal inside}
-
-li {margin-bottom: 1.5rem;}
-
-
 
 
