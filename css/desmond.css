@@ -11,7 +11,9 @@ Free to use under MIT license.
 Contents
 
 - Custom Typography
-
+- Navbar Styles
+- Content Area Styles
+- Footer Styles
 
 
 *----------------------------------------------------------------------------------
@@ -28,6 +30,8 @@ Custom Typography
        url('hattori_hanzo/webfont.ttf') format('truetype'),
        url('hattori_hanzo/webfont.svg#webfont') format('svg');
 }
+
+html {font-family: 'Helvetica Neue', 'Helvetica', 'Open Sans', Arial, sans-serif;}
 
 * {color: black}
 
@@ -51,10 +55,70 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {font-weight: inherit}
 
+
+
+
+
+/*----------------------------------------------------------------------------------
+
+Navbar Styles 
+
+------------------------------------------------------------------------------------  */
+
 .navbar-brand img {
   height: auto;
-  max-height: 2.5rem;
+  max-height: 2.25rem;
   width: auto;
 }
 
+.navbar-expand-lg, .footer {background: #1c1c1c}
 
+
+/*----------------------------------------------------------------------------------
+
+Content Area Styles
+
+------------------------------------------------------------------------------------  */
+
+.contentpalette {
+  display: block;
+  float: left;
+  padding: 2rem 2%;
+  }
+
+.contentpalette .main, .contentpalette .sidebar {
+  display: inline-block;
+  float: left;
+  padding: 0 2%;
+  }
+
+
+.contentpalette img {
+  width: auto;
+  max-width: 100%;
+}
+
+.contentpalette .main {
+  width: 70%;
+  }
+
+.contentpalette .sidebar {
+  width: 28%;
+  }
+
+
+/*----------------------------------------------------------------------------------
+
+Footer Styles 
+
+------------------------------------------------------------------------------------  */
+
+
+.footer {
+  padding: 2rem 2% 4rem 2%;
+  display: block;
+  width: 100%;
+  float: left;
+}
+
+.footer * {color: white;}
