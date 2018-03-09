@@ -1,124 +1,48 @@
-/* 
+/*
 
 Desmond
-Copyright (c) 2017-018 Peter A. McKay
-Free to use under MIT license.
+Copyright (c) 2018, Peter A. McKay
+Free to use under MIT License
 
-
-
-
-
-Contents
-
-- Custom Typography
-- Navbar Styles
-- Content Area Styles
-- Footer Styles
-
-
-*----------------------------------------------------------------------------------
-
-Custom Typography
-
-------------------------------------------------------------------------------------  */
+*/
 
 
 @font-face {
-  font-family: 'Hattori Hanzo';
-  src: url('hattori_hanzo/webfont.eot') format('eot'), url('fonts/hattori_hanzo/webfont.eot?iefix') format('eot'),
-       url('hattori_hanzo/webfont.woff') format('woff'),
-       url('hattori_hanzo/webfont.ttf') format('truetype'),
-       url('hattori_hanzo/webfont.svg#webfont') format('svg');
+  font-family: 'Merriweather';
+       src: url('merriweather/Merriweather-Regular.otf') format('opentype'),
+            url('merriweather/Merriweather-Italic.otf') format('opentype'),
+            url('merriweather/Merriweather-Bold.otf') format('opentype'),
+            url('merriweather/Merriweather-BoldItalic.otf') format('opentype'),
+            url('merriweather/Merriweather-Black.otf') format('opentype'),
+            url('merriweather/Merriweather-BlackItalic.otf') format('opentype'),
+            url('merriweather/Merriweather-Light.otf') format('opentype'),
+            url('merriweather/Merriweather-LightItalic.otf') format('opentype');
+       }
+
+@font-face {
+  font-family: 'Merriweather Sans Light';
+       src: url('merriweather-sans/MerriweatherSans-Light.otf') format('opentype'),
+            url('merriweather-sans/MerriweatherSans-Regular.otf') format('opentype'),
+            url('merriweather-sans/MerriweatherSans-Italic.otf') format('opentype'),
+            url('merriweather-sans/MerriweatherSans-Bold.otf') format('opentype'),
+            url('merriweather-sans/MerriweatherSans-BoldItalic.otf') format('opentype'),
+            url('merriweather-sans/MerriweatherSans-ExtraBold.otf') format('opentype'),
+            url('merriweather-sans/MerriweatherSans-ExtraBoldItalic.otf') format('opentype'),
+            url('merriweather-sans/MerriweatherSans-LightItalic.otf') format('opentype');
 }
 
-html {font-family: 'Helvetica Neue', 'Helvetica', 'Open Sans', Arial, sans-serif;}
-
-* {color: black}
-
-a, a:visited {
-  text-decoration: none;
-  color: #FF9100; 
-  font-weight: bold;
-}
-
-a:hover, a:focus {
-  color: #FF9100; 
-  text-decoration: underline;
+html, html * {
+  font-family: 'Merriweather Sans Light', 'Open Sans', Helvetica, Arial, sans-serif;
   }
 
+h1, h2, h3, h4, h5, h6 {font-family: 'Merriweather', 'Liberation Serif', 'New York', 'Times', serif}
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Hattori Hanzo', sans-serif;
-  color: black; 
-  font-weight: normal
-}
-
-h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {font-weight: inherit}
-
-
-
-
-
-/*----------------------------------------------------------------------------------
-
-Navbar Styles 
-
-------------------------------------------------------------------------------------  */
-
-.navbar-brand img {
-  height: auto;
-  max-height: 2.25rem;
-  width: auto;
-}
-
-.navbar-expand-lg, .footer {background: #1c1c1c}
-
-
-/*----------------------------------------------------------------------------------
-
-Content Area Styles
-
-------------------------------------------------------------------------------------  */
-
-.contentpalette {
-  display: block;
-  float: left;
-  padding: 2rem 2%;
+ a, a:visited {
+   color: #2A25B8; /* A nice shade of blue leftover from original DNDWG landing page... */
+   color: #FF9100;
+   font-weight: bold;
+   text-decoration: none;
   }
-
-.contentpalette .main, .contentpalette .sidebar {
-  display: inline-block;
-  float: left;
-  padding: 0 2%;
-  }
-
-
-.contentpalette img {
-  width: auto;
-  max-width: 100%;
-}
-
-.contentpalette .main {
-  width: 70%;
-  }
-
-.contentpalette .sidebar {
-  width: 28%;
-  }
-
-
-/*----------------------------------------------------------------------------------
-
-Footer Styles 
-
-------------------------------------------------------------------------------------  */
-
-
-.footer {
-  padding: 2rem 2% 4rem 2%;
-  display: block;
-  width: 100%;
-  float: left;
-}
-
-.footer * {color: white;}
+ 
+ a:hover {text-decoration: underline;}
+ 
