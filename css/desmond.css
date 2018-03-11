@@ -4,8 +4,27 @@ Desmond
 Copyright (c) 2018, Peter A. McKay
 Free to use under MIT License
 
-*/
 
+Contents
+
+- Basics & Typography
+- Footer
+
+
+
+
+
+
+
+
+----------------------------------------------------------
+
+Basics & Typography
+
+----------------------------------------------------------*/
+
+
+@import url("https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css");
 
 @font-face {
   font-family: 'Merriweather';
@@ -35,14 +54,54 @@ html, html * {
   font-family: 'Merriweather Sans Light', 'Open Sans', Helvetica, Arial, sans-serif;
   }
 
-h1, h2, h3, h4, h5, h6 {font-family: 'Merriweather', 'Liberation Serif', 'New York', 'Times', serif}
+.navbar, .navbar *, h1, h2, h3, h4, h5, h6 {font-family: 'Merriweather', 'Liberation Serif', 'New York', 'Times', serif;}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  margin-bottom: 1rem;
+  }
 
  a, a:visited {
-   color: #2A25B8; /* A nice shade of blue leftover from original DNDWG landing page... */
-   color: #FF9100;
+   color: #2A25B8; 
+   /* Indizr orange... color: #FF9100; */
    font-weight: bold;
    text-decoration: none;
   }
  
  a:hover {text-decoration: underline;}
+ 
+ 
+ img {
+   max-width: 100%;
+   margin: 0 0 1.5rem 0;
+   }
+ 
+ .navbar {
+   margin-bottom: 1rem;
+   padding: 0.75rem 1rem;
+   }
+ 
+ 
+ 
+/* ----------------------------------------------------------
+
+Footer
+
+----------------------------------------------------------*/
+ 
+ .footer {
+ 
+   /* 
+   Turning this off for now, leaving background color to Bootstrap to see how that looks...
+   background: #2A25B8;
+   background: #464646;
+   */
+   
+   color: #ebebeb;
+   padding: 2rem 0 12rem 0;
+   position: relative;
+   top: 2rem;
+   }
+ 
+ 
  
