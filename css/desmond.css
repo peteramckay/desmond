@@ -8,12 +8,8 @@ Free to use under MIT License
 Contents
 
 - Basics & Typography
+- Search Box
 - Footer
-
-
-
-
-
 
 
 
@@ -27,38 +23,34 @@ Basics & Typography
 @import url("https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css");
 
 @font-face {
-  font-family: 'Merriweather';
-       src: url('merriweather/Merriweather-Regular.otf') format('opentype'),
-            url('merriweather/Merriweather-Italic.otf') format('opentype'),
-            url('merriweather/Merriweather-Bold.otf') format('opentype'),
-            url('merriweather/Merriweather-BoldItalic.otf') format('opentype'),
-            url('merriweather/Merriweather-Black.otf') format('opentype'),
-            url('merriweather/Merriweather-BlackItalic.otf') format('opentype'),
-            url('merriweather/Merriweather-Light.otf') format('opentype'),
-            url('merriweather/Merriweather-LightItalic.otf') format('opentype');
-       }
+  font-family: 'Hattori Hanzo';
+  src: url('hattori_hanzo/webfont.eot') format('eot'), url('fonts/hattori_hanzo/webfont.eot?iefix') format('eot'),
+       url('hattori_hanzo/webfont.woff') format('woff'),
+       url('hattori_hanzo/webfont.ttf') format('truetype'),
+       url('hattori_hanzo/webfont.svg#webfont') format('svg');
+}
 
 @font-face {
   font-family: 'Merriweather Sans Light';
-       src: url('merriweather-sans/MerriweatherSans-Light.otf') format('opentype'),
-            url('merriweather-sans/MerriweatherSans-Regular.otf') format('opentype'),
-            url('merriweather-sans/MerriweatherSans-Italic.otf') format('opentype'),
-            url('merriweather-sans/MerriweatherSans-Bold.otf') format('opentype'),
-            url('merriweather-sans/MerriweatherSans-BoldItalic.otf') format('opentype'),
-            url('merriweather-sans/MerriweatherSans-ExtraBold.otf') format('opentype'),
-            url('merriweather-sans/MerriweatherSans-ExtraBoldItalic.otf') format('opentype'),
-            url('merriweather-sans/MerriweatherSans-LightItalic.otf') format('opentype');
+       src: url('merriweather-sans-light/MerriweatherSans-Light.otf') format('opentype'),
+            url('merriweather-sans-light/MerriweatherSans-Regular.otf') format('opentype'),
+            url('merriweather-sans-light/MerriweatherSans-Italic.otf') format('opentype'),
+            url('merriweather-sans-light/MerriweatherSans-Bold.otf') format('opentype'),
+            url('merriweather-sans-light/MerriweatherSans-BoldItalic.otf') format('opentype'),
+            url('merriweather-sans-light/MerriweatherSans-ExtraBold.otf') format('opentype'),
+            url('merriweather-sans-light/MerriweatherSans-ExtraBoldItalic.otf') format('opentype'),
+            url('merriweather-sans-light/MerriweatherSans-LightItalic.otf') format('opentype');
 }
 
 html, html * {
   font-family: 'Merriweather Sans Light', 'Open Sans', Helvetica, Arial, sans-serif;
+  line-height: 1.5;
   }
 
-.navbar, .navbar *, h1, h2, h3, h4, h5, h6 {font-family: 'Merriweather', 'Liberation Serif', 'New York', 'Times', serif;}
+.navbar, .navbar *, h1, h2, h3, h4, h5, h6 {font-family: 'Hattori Hanzo', 'Open Sans', Helvetica, Arial, sans-serif;}
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: bold;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   }
 
  a, a:visited {
@@ -76,10 +68,125 @@ h1, h2, h3, h4, h5, h6 {
    margin: 0 0 1.5rem 0;
    }
  
- .navbar {
-   margin-bottom: 1rem;
-   padding: 0.75rem 1rem;
-   }
+ .navbar {padding: 0.5rem 1rem;}
+ 
+ .navbar-brand img {
+   width: auto;
+   max-width: 225px;
+   margin-right: 1rem;
+   position: relative;
+   bottom: 0.25rem;
+ }
+ 
+ 
+/* ----------------------------------------------------------
+
+Search Box
+
+----------------------------------------------------------*/
+  
+ 
+/* Modifying default selectors & styles  from DuckDuckGo search page... 
+
+
+html{overflow:hidden;}
+body { margin: 0; }
+*/
+
+
+.search * {border: 2px dotted red;}
+
+#sxd {display: inline-block; }
+
+#search_form_homepage {
+  float:none;
+  margin:0; 
+  position: relative;
+  display: block;
+  border: 2px dotted red;
+}
+
+#search_form_homepage:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+#logo {
+  float:left;
+  display:none;
+  margin: -10px 15px 0 0;
+}
+
+#search_form_input_homepage {
+	position: absolute;	
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 2;
+	float: none;
+	background: #fff;
+	color: #222;
+	width: 100%;
+	display: block;
+	height: 39px;
+	padding: 4px 42px 5px 6px;
+	margin: 0;
+	outline: none;
+	border-right: 0;
+	border: 1px solid #8d8d8d;
+	font-size: 18px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	-moz-border-radius: 3px 0 0 3px;
+	-webkit-border-top-left-radius: 3px;
+	-webkit-border-bottom-left-radius: 3px;
+	-webkit-box-shadow: 0 1px 2px 0 rgba(0,0,0,0.20);
+	-moz-box-shadow: 0 1px 2px 0 rgba(0,0,0,0.20);
+	box-shadow: 0 1px 2px 0 rgba(0,0,0,0.20);
+	-moz-box-shadow: 0 1px 2px 0 rgba(0,0,0,0.20);
+	-webkit-box-shadow: 0 1px 2px 0 rgba(0,0,0,0.20);
+	-webkit-box-shadow: 1px 1px 2px #999;
+	-webkit-box-shadow: inset 1px 1px 2px #999;
+	-moz-box-shadow: inset 1px 1px 2px #999;
+	box-shadow: inset 1px 1px 2px #999;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;	
+}
+	.lt-ie8 #search_form_input_homepage {
+		height: 28px;
+	}
+
+#search_wrapper_homepage {
+	width:43px;
+	float: right;
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 3;
+}
+iframe #search_button_homepage {
+	float: left;
+	height: 39px;
+	width: 43px;
+	border: 0;
+	background: url("/assets/search_dropdown_homepage.v102.png") no-repeat;
+	-webkit-background-size: 67px 78px;
+	-moz-background-size: 67px 78px;
+	-o-background-size: 67px 78px;
+	background-size: 67px 78px;
+	cursor: pointer;
+	-webkit-border-radius: 0 3px 3px 0;
+	-moz-border-radius: 0 3px 3px 0;
+	border-radius: 0 3px 3px 0;
+    border: 2px solid black;
+}
+	#search_button_homepage:active {
+		background-position: left bottom;
+	}
  
  
  
