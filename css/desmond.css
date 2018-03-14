@@ -8,7 +8,7 @@ Free to use under MIT License
 Contents
 
 - Basics & Typography
-- Search Box
+- Navbar
 - Footer
 
 
@@ -65,130 +65,43 @@ h1, h2, h3, h4, h5, h6 {
  
  img {
    max-width: 100%;
-   margin: 0 0 1.5rem 0;
    }
+
+.container img, .container-fluid img {margin-bottom: 1.5rem;}
+
+
+/* ----------------------------------------------------------
+
+Navbar
+
+----------------------------------------------------------*/
+
  
- .navbar {padding: 0.5rem 1rem;}
+ .navbar {
+    margin-bottom: 1.5rem;
+    background: #f5f5f5;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 0.5rem 1rem 0 1rem;
+  }
+ 
  
  .navbar-brand img {
    width: auto;
-   max-width: 225px;
+   max-width: 200px;
    margin-right: 1rem;
    position: relative;
-   bottom: 0.25rem;
+   bottom: 0.5rem;
  }
  
+ .navbar-toggler {border:none} 
  
-/* ----------------------------------------------------------
-
-Search Box
-
-----------------------------------------------------------*/
-  
+ .navbar .socicons {
+   }
  
-/* Modifying default selectors & styles  from DuckDuckGo search page... 
-
-
-html{overflow:hidden;}
-body { margin: 0; }
-*/
-
-
-.search * {border: 2px dotted red;}
-
-#sxd {display: inline-block; }
-
-#search_form_homepage {
-  float:none;
-  margin:0; 
-  position: relative;
-  display: block;
-  border: 2px dotted red;
-}
-
-#search_form_homepage:after {
-		content: "";
-		display: table;
-		clear: both;
-	}
-#logo {
-  float:left;
-  display:none;
-  margin: -10px 15px 0 0;
-}
-
-#search_form_input_homepage {
-	position: absolute;	
-	top: 0;
-	left: 0;
-	right: 0;
-	z-index: 2;
-	float: none;
-	background: #fff;
-	color: #222;
-	width: 100%;
-	display: block;
-	height: 39px;
-	padding: 4px 42px 5px 6px;
-	margin: 0;
-	outline: none;
-	border-right: 0;
-	border: 1px solid #8d8d8d;
-	font-size: 18px;
-	-webkit-border-radius: 3px;
-	-moz-border-radius: 3px;
-	border-radius: 3px;
-	-moz-border-radius: 3px 0 0 3px;
-	-webkit-border-top-left-radius: 3px;
-	-webkit-border-bottom-left-radius: 3px;
-	-webkit-box-shadow: 0 1px 2px 0 rgba(0,0,0,0.20);
-	-moz-box-shadow: 0 1px 2px 0 rgba(0,0,0,0.20);
-	box-shadow: 0 1px 2px 0 rgba(0,0,0,0.20);
-	-moz-box-shadow: 0 1px 2px 0 rgba(0,0,0,0.20);
-	-webkit-box-shadow: 0 1px 2px 0 rgba(0,0,0,0.20);
-	-webkit-box-shadow: 1px 1px 2px #999;
-	-webkit-box-shadow: inset 1px 1px 2px #999;
-	-moz-box-shadow: inset 1px 1px 2px #999;
-	box-shadow: inset 1px 1px 2px #999;
-	-webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    -o-box-sizing: border-box;
-    box-sizing: border-box;	
-}
-	.lt-ie8 #search_form_input_homepage {
-		height: 28px;
-	}
-
-#search_wrapper_homepage {
-	width:43px;
-	float: right;
-	position: absolute;
-	top: 0;
-	right: 0;
-	z-index: 3;
-}
-iframe #search_button_homepage {
-	float: left;
-	height: 39px;
-	width: 43px;
-	border: 0;
-	background: url("/assets/search_dropdown_homepage.v102.png") no-repeat;
-	-webkit-background-size: 67px 78px;
-	-moz-background-size: 67px 78px;
-	-o-background-size: 67px 78px;
-	background-size: 67px 78px;
-	cursor: pointer;
-	-webkit-border-radius: 0 3px 3px 0;
-	-moz-border-radius: 0 3px 3px 0;
-	border-radius: 0 3px 3px 0;
-    border: 2px solid black;
-}
-	#search_button_homepage:active {
-		background-position: left bottom;
-	}
- 
- 
+  .navbar .socicons img {
+    min-width: 30px;
+    margin-right: 0.25rem;
+  }
  
 /* ----------------------------------------------------------
 
