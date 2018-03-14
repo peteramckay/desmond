@@ -89,19 +89,18 @@ Navbar
 
  
  .navbar {
-    margin-bottom: 1.5rem;
-    background: #f5f5f5;
-    border-bottom: 1px solid #e0e0e0;
-    padding: 0.5rem 1rem 0 1rem;
+    margin-bottom: 1.25rem;
   }
  
+ .nav-link {
+   position: relative;
+   top: 0.5rem;
+   }
  
  .navbar-brand img {
    width: auto;
    max-width: 160px;
    margin-right: 1rem;
-   position: relative;
-   bottom: 0.5rem;
  }
  
  .navbar-toggler {border:none} 
@@ -110,10 +109,19 @@ Navbar
    }
  
   .navbar .socicons img {
-    min-width: 30px;
-    margin-right: 0.25rem;
+    width: auto;
+    max-width: 35px;
+    margin: 0.5rem 0.25rem;
   }
+ 
+ .dropdown-menu {}
 
+ .dropdown-menu a, .dropdown-menu a:visited {color: white;}
+ 
+ .dropdown-menu a:hover {
+   background: #f2f2f2;
+   color: #2A25B8;
+   } 
 
 /* ----------------------------------------------------------
 
@@ -122,6 +130,8 @@ Jumbotron & Cards
 ----------------------------------------------------------*/
 
 .jumbotron, .jumbotron>*, .album {background: none}
+
+.jumbotron a.btn, .jumbotron a.btn:visited {color: white;}
 
 .card img {margin-bottom: 0.25rem;}
 
